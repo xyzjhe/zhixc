@@ -27,15 +27,25 @@ jobs:
       run: |
          #添加Misc&ali
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/ali/API.java > app/src/main/java/com/github/catvod/ali/API.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/ali/API.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Ali.java > app/src/main/java/com/github/catvod/spider/Ali.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Ali.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Bili.java > app/src/main/java/com/github/catvod/spider/Bili.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Bili.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Dovx.java > app/src/main/java/com/github/catvod/spider/Dovx.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Dovx.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/PanSearch.java > app/src/main/java/com/github/catvod/spider/PanSearch.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/PanSearch.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/PanSou.java > app/src/main/java/com/github/catvod/spider/PanSou.java
-         curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/UpYun.java > app/src/main/java/com/github/catvod/spider/UpYun.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/PanSou.java
+         curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/UpYun.java > app/src/main/java/com/github/catvod/spider/PanSou.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/PanSou.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Wogg.java > app/src/main/java/com/github/catvod/spider/Wogg.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Wogg.java
          curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Zhaozy.java > app/src/main/java/com/github/catvod/spider/Zhaozy.java
-         curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Push.java > app/src/main/java/com/github/catvod/spider/Push.java        
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Zhaozy.java
+         curl -L https://github.com/FongMi/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Push.java > app/src/main/java/com/github/catvod/spider/Push.java
+         sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Push.java
       
     - name: Build the app
       working-directory: ./project
