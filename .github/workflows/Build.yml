@@ -22,7 +22,7 @@ jobs:
         rm -rf jar/custom_spider.jar
         git clone --recurse-submodules https://github.com/zhixc/CatVodTVSpider project
       
-        - name: Build the app
+    - name: Build the app
       working-directory: ./project
       run: |        
          chmod +x gradlew
